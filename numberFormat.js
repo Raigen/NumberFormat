@@ -23,6 +23,6 @@ function formatNumber(input, format, thousand, num) {
   alert(firstNumber + '.' + secondNumber);
 
   //parsing format
-  result = String(format).replace('$1', first).replace('$2', second);
+  result = String(format).replace('$1', firstNumber).replace('$2', secondNumber);
   return result;
 }
