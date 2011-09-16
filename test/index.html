@@ -7,7 +7,7 @@
 <script>
 function format() {
   var value = document.getElementById("number").value;
-  document.getElementById("result").innerHTML = formatNumber(value,"$1,$2 &euro;", '.', 2);
+  document.getElementById("result").innerHTML = formatNumber(value,"%1,%2 &euro;", 2);
 }
 </script>
 </head>
