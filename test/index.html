@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NumberFormat Test</title>
+<script src="../numberFormat.js"></script>
+<script>
+function format() {
+  var value = document.getElementById("number").value;
+  document.getElementById("result").innerHtml(formatNumber(value,"$1,$2 &euro;", '.', 2));
+}
+</script>
+</head>
+<body>
+<h1>NumberFormat Test</h1>
+<input id="number" type="number" autofocus="autofocus" step="0.01" value="0.00" />
+<button onclick="format()">format</button>
+<span id="result"></span>
+</body>
+</html>
