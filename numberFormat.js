@@ -4,19 +4,16 @@
  * @author          Florian Oellerich
  * @param input     number to format
  * @param format    which format should the output have
- * @param thousand  what symbol for thousand separator
  * @param num       how many digits after separator
  * @returns {String}
  */
 function formatNumber(input, format, num) {
-  if (!input) {
-    input = '0.0';
-  }
   var numberString = '';
   var firstNumber = '';
   var secondNumber = '';
   var indexOfPoint = 0;
 
+  input = input.toString() || '0.0';
   format = format || '%1.%2';
   num = num || 2;
 
